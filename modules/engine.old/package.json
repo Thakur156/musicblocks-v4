@@ -21,7 +21,7 @@
     "src"
   ],
   "scripts": {
-    "build": "rm -rf dist/* && tsc -p . && cp -R src/@types dist/@types",
+    "build": "node init && rm -rf dist/* && tsc -p . && cp -R src/@types dist/@types",
     "test": "vitest --passWithNoTests src/syntax src/library src/execution",
     "check": "tsc --noEmit",
     "lint": "eslint src/**/*.ts && textlint --rule terminology --rule no-empty-section --rule no-dead-link README.md",

@@ -20,8 +20,8 @@
   },
   "scripts": {
     "serve": "lerna --scope @sugarlabs/mb4-app run serve",
-    "build": "lerna --scope @sugarlabs/mb4-app run build",
-    "build:gh": "lerna --scope @sugarlabs/mb4-app run build:gh",
+    "build": "node init && lerna --scope @sugarlabs/mb4-app run build",
+    "build:gh": "node init && lerna --scope @sugarlabs/mb4-app run build:gh",
     "preview": "lerna --scope @sugarlabs/mb4-app run preview",
     "preview:gh": "lerna --scope @sugarlabs/mb4-app run preview:gh",
     "visualize": "lerna --scope @sugarlabs/mb4-app run visualize",
